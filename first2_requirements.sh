@@ -11,7 +11,7 @@ sudo apt-get install git
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler 
 sudo apt-get install --no-install-recommends libboost-all-dev 
 sudo apt-get install libatlas-base-dev 
-sudo apt-get install python-dev 
+sudo apt-get install python3.5-dev 
 sudo apt-get insall libgflags-dev libgoogle-glog-dev liblmdb-dev
 
 #install cuda-8.0
@@ -50,7 +50,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
 	  -DBUILD_EXAMPLES=ON ..
 make 
 sudo make install
-sudo /home/jhx/CAFFE-GPU-INSTALL/OpenCV.conf /etc/ld.so.conf.d/
+sudo cp /home/jhx/CAFFE-GPU-INSTALL/OpenCV.conf /etc/ld.so.conf.d/
 sudo ldconfig
 
 
